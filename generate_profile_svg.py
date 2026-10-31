@@ -32,6 +32,8 @@ DATOS: dict[str, object] = {
         "PostgreSQL",
         "Redis",
         "Docker",
+        "React",
+        "Next.js",
     ],
     "enfoque": ["APIs REST", "automatización", "scraping"],
     "disponible_para": ["freelance", "prácticas"],
@@ -39,6 +41,7 @@ DATOS: dict[str, object] = {
 }
 
 URL = "https://api.github.com/jhonatan-sz"
+PROMPT = f"jhonatan@dev:~ $ curl -s {URL}"
 TITULO = "jhonatan-sz · perfil.json"
 
 # --- estilo -----------------------------------------------------------------
@@ -54,14 +57,44 @@ FUENTE = (
     "'Liberation Mono', monospace"
 )
 
-ANCHO = 780
 MARGEN = 28
 TAM_FUENTE = 14
 ALTO_LINEA = 23
 BARRA_ALTO = 40
+ANCHO_MINIMO = 560
+# Monospace a 14 px: el avance real de cada carácter ronda 0.62 em.
+PX_POR_CARACTER = TAM_FUENTE * 0.62
+# Longitud de línea a la que se reparten los arrays.
+ANCHO_TEXTO = 72
 
 
-def formatear(datos: dict[str, object], ancho_max: int = 84) -> list[str]:
+def repartir(items: list[str], ancho_max: int) -> list[list[str]]:
+    """Reparte los items en líneas de longitud parecida.
+
+    Evita el clásico final con un solo elemento colgando: calcula cuántas
+    líneas hacen falta y reparte el ancho entre ellas.
+    """
+    total = sum(len(item) for item in items) + 2 * (len(items) - 1)
+    lineas_necesarias = max(1, -(-(total + 4) // ancho_max))
+    objetivo = -(-(total + 4) // lineas_necesarias) + 2
+
+    lineas: list[list[str]] = []
+    actual: list[str] = []
+    largo = 0
+    for item in items:
+        if actual and largo + len(item) + 2 > objetivo:
+            lineas.append(actual)
+            actual = [item]
+            largo = len(item)
+        else:
+            actual.append(item)
+            largo += len(item) + 2
+    if actual:
+        lineas.append(actual)
+    return lineas
+
+
+def formatear(datos: dict[str, object], ancho_max: int = ANCHO_TEXTO) -> list[str]:
     """JSON legible pero compacto: los arrays cortos van en una línea."""
     lineas = ["{"]
     claves = list(datos)
@@ -76,20 +109,13 @@ def formatear(datos: dict[str, object], ancho_max: int = 84) -> list[str]:
                 lineas.append(en_una_linea)
                 continue
             lineas.append(prefijo + "[")
-            actual = "    "
-            for pos, item in enumerate(items):
-                trozo = item + ("," if pos < len(items) - 1 else "")
-                candidato = f"{actual}{trozo} "
-                if len(candidato.rstrip()) > ancho_max and actual.strip():
-                    lineas.append(actual.rstrip())
-                    actual = f"    {trozo} "
-                else:
-                    actual = candidato
-            lineas.append(actual.rstrip())
+            grupos = repartir(items, ancho_max)
+            for pos, grupo in enumerate(grupos):
+                final = "," if pos < len(grupos) - 1 else ""
+                lineas.append("    " + ", ".join(grupo) + final)
             lineas.append("  ]" + coma)
         else:
-            texto = f'"{valor}"'
-            lineas.append(prefijo + texto + coma)
+            lineas.append(prefijo + f'"{valor}"' + coma)
     lineas.append("}")
     return lineas
 
@@ -138,29 +164,31 @@ def bloque_texto(lineas: list[str], y_inicial: int) -> list[str]:
 
 def generar(destino: Path) -> None:
     cuerpo = formatear(DATOS)
+    # El ancho se ajusta al contenido: ni un píxel de más.
+    caracteres = max([len(PROMPT)] + [len(linea) for linea in cuerpo])
+    ancho = max(ANCHO_MINIMO, round(caracteres * PX_POR_CARACTER) + 2 * MARGEN + 8)
+
     y_prompt = BARRA_ALTO + MARGEN + TAM_FUENTE
     alto = y_prompt + ALTO_LINEA * (len(cuerpo) + 1) + MARGEN - TAM_FUENTE
 
     partes: list[str] = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{ANCHO}" '
-        f'height="{alto}" viewBox="0 0 {ANCHO} {alto}" role="img" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{ancho}" '
+        f'height="{alto}" viewBox="0 0 {ancho} {alto}" role="img" '
         f'font-family="{FUENTE}" font-size="{TAM_FUENTE}" '
         f'aria-label="Perfil de Jhonatan Sánchez">',
         "<title>Jhonatan Sánchez — perfil de backend</title>",
-        f'<rect x="0" y="0" width="{ANCHO}" height="{alto}" rx="12" '
+        f'<rect x="0" y="0" width="{ancho}" height="{alto}" rx="12" '
         f'fill="{FONDO}" stroke="{BORDE}"/>',
-        f'<path d="M0 12a12 12 0 0 1 12-12h{ANCHO - 24}a12 12 0 0 1 12 12v'
+        f'<path d="M0 12a12 12 0 0 1 12-12h{ancho - 24}a12 12 0 0 1 12 12v'
         f'{BARRA_ALTO - 12}H0z" fill="{BARRA}"/>',
-        f'<line x1="0" y1="{BARRA_ALTO}" x2="{ANCHO}" y2="{BARRA_ALTO}" '
+        f'<line x1="0" y1="{BARRA_ALTO}" x2="{ancho}" y2="{BARRA_ALTO}" '
         f'stroke="{BORDE}"/>',
         f'<circle cx="24" cy="20" r="6" fill="{BORDE}"/>',
         f'<circle cx="44" cy="20" r="6" fill="{BORDE}"/>',
         f'<circle cx="64" cy="20" r="6" fill="{BORDE}"/>',
-        f'<text x="{ANCHO // 2}" y="24" text-anchor="middle" '
-        f'font-family="{FUENTE}" font-size="12" fill="{APAGADO}">'
-        f"{escape(TITULO)}</text>",
-        f'<text x="{MARGEN}" y="{y_prompt}" font-family="{FUENTE}" '
-        f'font-size="{TAM_FUENTE}" xml:space="preserve">'
+        f'<text x="{ancho // 2}" y="24" text-anchor="middle" '
+        f'font-size="12" fill="{APAGADO}">{escape(TITULO)}</text>',
+        f'<text x="{MARGEN}" y="{y_prompt}" xml:space="preserve">'
         f'<tspan fill="{APAGADO}">jhonatan@dev</tspan>'
         f'<tspan fill="{APAGADO}">:</tspan>'
         f'<tspan fill="{APAGADO}">~</tspan>'
