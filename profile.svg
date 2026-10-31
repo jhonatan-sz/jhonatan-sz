@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="418" viewBox="0 0 780 418" role="img" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" aria-label="Perfil de Jhonatan Sánchez">
+<title>Jhonatan Sánchez — perfil de backend</title>
+<rect x="0" y="0" width="780" height="418" rx="12" fill="#0D1117" stroke="#30363D"/>
+<path d="M0 12a12 12 0 0 1 12-12h756a12 12 0 0 1 12 12v28H0z" fill="#161B22"/>
+<line x1="0" y1="40" x2="780" y2="40" stroke="#30363D"/>
+<circle cx="24" cy="20" r="6" fill="#30363D"/>
+<circle cx="44" cy="20" r="6" fill="#30363D"/>
+<circle cx="64" cy="20" r="6" fill="#30363D"/>
+<text x="390" y="24" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8B949E">jhonatan-sz · perfil.json</text>
+<text x="28" y="82" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" xml:space="preserve"><tspan fill="#8B949E">jhonatan@dev</tspan><tspan fill="#8B949E">:</tspan><tspan fill="#8B949E">~</tspan><tspan fill="#F59E0B"> $ </tspan><tspan fill="#E6EDF3">curl -s https://api.github.com/jhonatan-sz</tspan></text>
+<text x="28" y="105" xml:space="preserve"><tspan fill="#8B949E">{</tspan></text>
+<text x="28" y="128" xml:space="preserve"><tspan fill="#8B949E">  </tspan><tspan fill="#F59E0B">"nombre"</tspan><tspan fill="#8B949E">: </tspan><tspan fill="#E6EDF3">"Jhonatan Sánchez"</tspan><tspan fill="#8B949E">,</tspan></text>
+<text x="28" y="151" xml:space="preserve"><tspan fill="#8B949E">  </tspan><tspan fill="#F59E0B">"rol"</tspan><tspan fill="#8B949E">: </tspan><tspan fill="#E6EDF3">"Backend Developer"</tspan><tspan fill="#8B949E">,</tspan></text>
+<text x="28" y="174" xml:space="preserve"><tspan fill="#8B949E">  </tspan><tspan fill="#F59E0B">"formacion"</tspan><tspan fill="#8B949E">: </tspan><tspan fill="#E6EDF3">"Ingeniería de Sistemas · 6º semestre"</tspan><tspan fill="#8B949E">,</tspan></text>
+<text x="28" y="197" xml:space="preserve"><tspan fill="#8B949E">  </tspan><tspan fill="#F59E0B">"ubicacion"</tspan><tspan fill="#8B949E">: </tspan><tspan fill="#E6EDF3">"Colombia"</tspan><tspan fill="#8B949E">,</tspan></text>
+<text x="28" y="220" xml:space="preserve"><tspan fill="#8B949E">  </tspan><tspan fill="#F59E0B">"stack"</tspan><tspan fill="#8B949E">: [</tspan></text>
+<text x="28" y="243" xml:space="preserve"><tspan fill="#8B949E">    </tspan><tspan fill="#E6EDF3">"TypeScript"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"NestJS"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"Prisma"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"Python"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"FastAPI"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"PostgreSQL"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"Redis"</tspan><tspan fill="#8B949E">,</tspan></text>
+<text x="28" y="266" xml:space="preserve"><tspan fill="#8B949E">    </tspan><tspan fill="#E6EDF3">"Docker"</tspan></text>
+<text x="28" y="289" xml:space="preserve"><tspan fill="#8B949E">  ],</tspan></text>
+<text x="28" y="312" xml:space="preserve"><tspan fill="#8B949E">  </tspan><tspan fill="#F59E0B">"enfoque"</tspan><tspan fill="#8B949E">: [</tspan><tspan fill="#E6EDF3">"APIs REST"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"automatización"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"scraping"</tspan><tspan fill="#8B949E">],</tspan></text>
+<text x="28" y="335" xml:space="preserve"><tspan fill="#8B949E">  </tspan><tspan fill="#F59E0B">"disponible_para"</tspan><tspan fill="#8B949E">: [</tspan><tspan fill="#E6EDF3">"freelance"</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#E6EDF3">"prácticas"</tspan><tspan fill="#8B949E">],</tspan></text>
+<text x="28" y="358" xml:space="preserve"><tspan fill="#8B949E">  </tspan><tspan fill="#F59E0B">"contacto"</tspan><tspan fill="#8B949E">: </tspan><tspan fill="#E6EDF3">"jhonatan2000j@gmail.com"</tspan></text>
+<text x="28" y="381" xml:space="preserve"><tspan fill="#8B949E">}</tspan></text>
+</svg>
