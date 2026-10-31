@@ -21,7 +21,7 @@ jobs:
           github_user_name: jhonatan-sz
           outputs: |
             dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=F59E0B&color_dots=#1F2328,#5A4A1F,#8C6B12,#C98A0B,#F59E0B
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=F59E0B&color_dots=#161B22,#30363D,#484F58,#6E7681,#8B949E
 
       - name: Publicar en la rama output
         uses: crazy-max/ghaction-github-pages@v4
