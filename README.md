@@ -7,7 +7,7 @@
 
 ### Sobre mí
 
-Soy **Jhonatan Sánchez**, estudiante de Ingeniería de Sistemas, orientado a **backend engineering**. Diseño y construyo APIs con NestJS, FastAPI y PostgreSQL, con foco en modelado de datos, concurrencia y testing. Me interesa el ciclo completo: del esquema relacional al despliegue, con decisiones medibles.
+Soy **Jhonatan Sánchez**, estudiante de Ingeniería de Sistemas, con interés en **backend engineering** y **bases de datos**. Me gusta aprender tecnologías nuevas para entender cómo funcionan y construir proyectos con ellas. Construyo APIs con NestJS, FastAPI y PostgreSQL, cuidando el modelado de datos, la concurrencia y el testing.
 
 ### Enfoque
 
