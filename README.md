@@ -1,18 +1,18 @@
 ```text
- :-:::::::::::::::::::::-:      jhonatan@dev
- =                       =      ------------
- =                       =      OS        Ubuntu 26.04.1 LTS (WSL2)
- =     :--:  .==-.       =      Kernel    6.6.114.1-microsoft-standard-WSL2
- =     -+@# -@+-+:       =      Shell     bash 5.3.9
- =       ## :##+:        =      Runtime   Node 24.21 · Python 3.14 · uv 0.12
- =       %#   .=@*       =      Backend   NestJS 12 · FastAPI 0.115+
- =    ***%= -#++%=       =      Data      PostgreSQL 18 · Redis 7
- =    .::.   .::.        =      Queue     ARQ · 7 workers
- =                       =      Tests     490 pytest · 24 Jest · 22 offline
- =                       =      Editor    VS Code · Fira Code
- =                       =      Locale    Colombia · UTC-5
- =                       =      Status    abierto a backend / freelance
- :-:::::::::::::::::::::-:      $ _
+        :++                     jhonatan@dev
+        -#@#+-+#-.              ------------
+       -=-+%#==%@#-+.           OS        Ubuntu 26.04.1 LTS (WSL2)
+      .*==+=%**@@+=++           Kernel    6.6.114.1-microsoft-standard-WSL2
+   ===+#---*@#-:.:-+%===:       Shell     bash 5.3.9
+   -*=+-  +@+       +==*        Runtime   Node 24.21 · Python 3.14 · uv 0.12
+  .:##.    .         :%+:       Backend   NestJS 12 · FastAPI 0.115+
+ .*+-+:              +=-*=      Data      PostgreSQL 18 · Redis 7
+  .-#*.              :%+:       Queue     ARQ · 7 workers
+   :*==-            ==++        Tests     490 pytest · 24 Jest · 22 offline
+   ===**::.      ::-#=-+:       Editor    VS Code · Fira Code
+     ..#==*-----+*=++..         Locale    Colombia · UTC-5
+       ==--=*==*=--+.           Status    abierto a backend / freelance
+            .=-                 $ _
 ```
 
 **Jhonatan Sánchez** · Ingeniería de Sistemas · Backend, datos y automatización.
