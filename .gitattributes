@@ -1,3 +1,4 @@
-# El repo del perfil no es un proyecto de Python: el generador no debe
+# El repo del perfil no es un proyecto de Python: los generadores no deben
 # aparecer como lenguaje del repo.
 generate_profile_svg.py linguist-detectable=false
+tools/ascii_gen.py linguist-detectable=false
