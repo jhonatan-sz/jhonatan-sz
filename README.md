@@ -1,8 +1,5 @@
 <div align="center">
-  <picture>
-    <source media="(max-width: 640px)" srcset="./assets/fastfetch-mobile.png" />
-    <img src="./assets/fastfetch.png" alt="Terminal fastfetch de Jhonatan Sánchez: dragón, Ubuntu, NestJS, FastAPI, PostgreSQL y Redis" width="100%" />
-  </picture>
+  <img src="./assets/fastfetch-jsz-c.svg" alt="Terminal fastfetch de jhonatan-sz: stack, bases de datos y contacto" width="100%" />
 </div>
 
 ### Sobre mí
