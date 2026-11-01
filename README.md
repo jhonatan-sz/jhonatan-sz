@@ -1,10 +1,13 @@
 <div align="center">
-  <img src="./assets/fastfetch.png" alt="Terminal fastfetch de Jhonatan Sánchez: dragón, Ubuntu, NestJS, FastAPI, PostgreSQL y Redis" width="100%" />
+  <picture>
+    <source media="(max-width: 640px)" srcset="./assets/fastfetch-mobile.png" />
+    <img src="./assets/fastfetch.png" alt="Terminal fastfetch de Jhonatan Sánchez: dragón, Ubuntu, NestJS, FastAPI, PostgreSQL y Redis" width="100%" />
+  </picture>
 </div>
 
 ### Sobre mí
 
-Soy estudiante de Ingeniería de Sistemas, orientado a **backend engineering**. Diseño y construyo APIs con NestJS, FastAPI y PostgreSQL, con foco en modelado de datos, concurrencia y testing. Me interesa el ciclo completo: del esquema relacional al despliegue, con decisiones medibles.
+Soy **Jhonatan Sánchez**, estudiante de Ingeniería de Sistemas, orientado a **backend engineering**. Diseño y construyo APIs con NestJS, FastAPI y PostgreSQL, con foco en modelado de datos, concurrencia y testing. Me interesa el ciclo completo: del esquema relacional al despliegue, con decisiones medibles.
 
 ### Enfoque
 
@@ -31,6 +34,7 @@ Backend Engineering · APIs · Bases de datos · Concurrencia · Automatización
   <img src="https://img.shields.io/badge/JEST-C21325?style=for-the-badge&logo=jest&logoColor=white" />
   <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/REACT-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/EXPO-000020?style=for-the-badge&logo=expo&logoColor=white" />
   <img src="https://img.shields.io/badge/VERCEL-000000?style=for-the-badge&logo=vercel&logoColor=white" />
   <img src="https://img.shields.io/badge/RENDER-46E3B7?style=for-the-badge&logo=render&logoColor=black" />
@@ -46,6 +50,18 @@ Backend Engineering · APIs · Bases de datos · Concurrencia · Automatización
   <img src="https://img.shields.io/badge/UV-DE5FE9?style=for-the-badge&logo=uv&logoColor=white" />
   <img src="https://img.shields.io/badge/SWAGGER-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" />
 </p>
+
+---
+
+### Actividad
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-snake.svg" />
+    <img alt="Serpiente de contribuciones de GitHub" src="./assets/github-snake.svg" width="100%" />
+  </picture>
+</div>
 
 ---
 
