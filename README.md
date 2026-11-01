@@ -4,7 +4,7 @@
 
 ### Sobre mí
 
-Ingeniería de Sistemas, orientado a **backend engineering**. Diseño y construyo APIs con NestJS, FastAPI y PostgreSQL, con foco en modelado de datos, concurrencia y testing. Me interesa el ciclo completo: del esquema relacional al despliegue, con decisiones medibles.
+Soy estudiante de Ingeniería de Sistemas, orientado a **backend engineering**. Diseño y construyo APIs con NestJS, FastAPI y PostgreSQL, con foco en modelado de datos, concurrencia y testing. Me interesa el ciclo completo: del esquema relacional al despliegue, con decisiones medibles.
 
 ### Enfoque
 
@@ -15,7 +15,7 @@ Backend Engineering · APIs · Bases de datos · Concurrencia · Automatización
 <p align="left">
   <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge" />
   <img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/NESTJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" />
   <img src="https://img.shields.io/badge/FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
@@ -32,7 +32,7 @@ Backend Engineering · APIs · Bases de datos · Concurrencia · Automatización
 ### Entorno
 
 <p align="left">
-  <img src="https://img.shields.io/badge/VS_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+  <img src="https://img.shields.io/badge/VS_CODE-007ACC?style=for-the-badge" />
   <img src="https://img.shields.io/badge/LINUX-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
   <img src="https://img.shields.io/badge/WSL2-4D4D4D?style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/GITHUB_ACTIONS-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
