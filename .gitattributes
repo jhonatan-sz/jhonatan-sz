@@ -1,3 +1,0 @@
-# El repo del perfil no es un proyecto de Python: el generador no debe
-# aparecer como lenguaje del repo.
-generate_profile_svg.py linguist-detectable=false
