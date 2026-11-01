@@ -10,6 +10,12 @@ Soy estudiante de Ingeniería de Sistemas, con interés en **backend engineering
 
 Backend Engineering · APIs · Bases de datos · Concurrencia · Automatización
 
+### Proyectos
+
+**[solicitudes-academicas](https://github.com/jhonatan-sz/solicitudes-academicas)** — Sistema de solicitudes académicas (NestJS · Prisma · PostgreSQL · React). Flujo de aprobación con máquina de estados y permisos por rol, validado con 58 tests unitarios y CI. Mi proyecto más completo hasta ahora.
+
+**[book-scraper](https://github.com/jhonatan-sz/book-scraper)** — Scraper en Python sin dependencias de runtime: recorre un catálogo de 1000 libros, valida el esquema y se testea con fixtures sin tocar la red.
+
 ### Stack
 
 <p align="left">
@@ -31,10 +37,6 @@ Backend Engineering · APIs · Bases de datos · Concurrencia · Automatización
   <img src="https://img.shields.io/badge/JEST-C21325?style=for-the-badge&logo=jest&logoColor=white" />
   <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/REACT-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/EXPO-000020?style=for-the-badge&logo=expo&logoColor=white" />
-  <img src="https://img.shields.io/badge/VERCEL-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/RENDER-46E3B7?style=for-the-badge&logo=render&logoColor=black" />
 </p>
 
 ### Entorno
