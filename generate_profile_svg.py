@@ -21,7 +21,7 @@ from xml.sax.saxutils import escape
 DATOS: dict[str, object] = {
     "nombre": "Jhonatan Sánchez",
     "rol": "Backend Developer",
-    "formacion": "Ingeniería de Sistemas · 6º semestre",
+    "formacion": "Ingeniería de Sistemas",
     "ubicacion": "Colombia",
     "stack": [
         "TypeScript",
